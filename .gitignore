@@ -1,0 +1,61 @@
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+.env
+.venv
+env/
+venv/
+*.ipynb_checkpoints/
+
+# ============================================
+# C
+# ============================================
+*.o
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
+c/build/
+c/bin/
+
+# ============================================
+# IDEs y editores
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Datos generados (trackear solo estructura, no outputs)
+# ============================================
+data/*.csv
+results/figures/*.png
+results/figures/*.pdf
+results/metrics/*.csv
+results/metrics/*.txt
+
+# ============================================
+# Jupyter notebooks (checkpoints ignorados arriba)
+# ============================================
+.ipynb_checkpoints/
+
+# ============================================
+# Misc
+# ============================================
+*.log
+*.tmp
+*.temp

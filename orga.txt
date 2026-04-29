@@ -1,0 +1,45 @@
+scm-heston-filter/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+│
+├── python/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── heston_simulator.py
+│   ├── particle_filter.py
+│   ├── utils.py
+│   └── convergence_analysis.py
+│
+├── c/
+│   ├── Makefile
+│   ├── include/
+│   │   ├── heston_params.h
+│   │   ├── random_utils.h
+│   │   ├── heston_sim.h
+│   │   └── particle_filter.h
+│   ├── src/
+│   │   ├── random_utils.c
+│   │   ├── heston_sim_init.c
+│   │   ├── heston_sim_step.c
+│   │   ├── heston_sim_full.c
+│   │   ├── particle_filter_init.c
+│   │   ├── particle_filter_predict.c
+│   │   ├── particle_filter_update.c
+│   │   ├── particle_filter_resample.c
+│   │   └── particle_filter_run.c
+│   └── main.c
+│
+├── notebooks/
+│   └── particle_filter_demo.ipynb
+│
+├── results/
+│   ├── figures/
+│   │   └── .gitkeep
+│   └── metrics/
+│       └── .gitkeep
+│
+└── data/
+    └── .gitkeep
